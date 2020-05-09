@@ -1,0 +1,408 @@
+[{
+  "_id": {
+    "$oid": "5eb694d867972149a0661a17"
+  },
+  "name": "29k Red Dotted Slim Fit Casual Shirt For Men",
+  "price": 350,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\Mens-Standard-Fit-Heathered-Short-Sleeve-V-Neck-T-Shirt01-600x764.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb694f167972149a0661a18"
+  },
+  "name": "Black Bee Beige Cotton Printed",
+  "price": 450,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\538228-0286_1-510x649.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6950867972149a0661a19"
+  },
+  "name": "Cotton Printed Regular ",
+  "price": 630,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\Mens-Standard-Fit-Short-Sleeve-Crew-T-Shirt01-600x764.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6967a67972149a0661a1a"
+  },
+  "name": "People Women's Regular fit Top",
+  "price": 630,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\61FVmZ5+rXL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb696aa67972149a0661a1b"
+  },
+  "name": "Miss Chase Women's White Basic Top",
+  "price": 420,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\81n9I8dIeFL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb696c767972149a0661a1c"
+  },
+  "name": "Turquoise Floral Print Long Belted Tie-Up ",
+  "price": 630,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\91ZV6MDwl3L._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb696e567972149a0661a1d"
+  },
+  "name": " Grey & White Round Neck Half Sleeved ",
+  "price": 480,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\81o5eQAdsGL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6976a67972149a0661a1e"
+  },
+  "name": "Women's Plain Loose Fit Top",
+  "price": 630,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\81AuMZrtlXL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb697a367972149a0661a1f"
+  },
+  "name": " Womens Navy Blue Sleeveless Crop Top",
+  "price": 530,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\81Aa5RlufHL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb697c767972149a0661a20"
+  },
+  "name": "Women's Plain Loose Fit Top",
+  "price": 130,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\81sBXoebupL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6981267972149a0661a21"
+  },
+  "name": "Women's Plain White Top",
+  "price": 950,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\81vdHasFRoL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6982367972149a0661a22"
+  },
+  "name": "Women's Plain Black Fit Top",
+  "price": 163,
+  "category": {
+    "$oid": "5eb6946a67972149a0661a11"
+  },
+  "productImage": "uploads\\61nx58zZR9L._UL1024_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a39867972149a0661a23"
+  },
+  "name": "Slim Fit Full Sleeve Cotton Casual Shirt Gray",
+  "price": 456,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\81Uaa6osdJL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a3a267972149a0661a24"
+  },
+  "name": "Slim Fit Full Sleeve Cotton Casual Shirt Green",
+  "price": 563,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\81H0ki1TX2L._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a40267972149a0661a25"
+  },
+  "name": "Symbol Men's Checkered Slim Fit Casual Shirt Red",
+  "price": 230,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\815qCLkD6RL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a41267972149a0661a26"
+  },
+  "name": "Symbol Men's Checkered Slim Fit Casual Shirt White - Red",
+  "price": 125,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\91sScvt-jWL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a46167972149a0661a27"
+  },
+  "name": "Men's Slim fit Casual Shirt Black",
+  "price": 452,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\71aQIPEiPwL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a47067972149a0661a28"
+  },
+  "name": "Slim fit Casual Shirt Blue",
+  "price": 159,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\81+By76Ic5L._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a48067972149a0661a29"
+  },
+  "name": "Slim fit Casual Shirt Yellow",
+  "price": 420,
+  "category": {
+    "$oid": "5eb6945d67972149a0661a10"
+  },
+  "productImage": "uploads\\81KEuslj+ZL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a50c67972149a0661a2a"
+  },
+  "name": "Rich Dad Poor Dad",
+  "price": 650,
+  "category": {
+    "$oid": "5eb6948a67972149a0661a14"
+  },
+  "productImage": "uploads\\91VokXkn8hL.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a53e67972149a0661a2b"
+  },
+  "name": "The Monk Who Sold His Ferrari Paperback",
+  "price": 137,
+  "category": {
+    "$oid": "5eb6948a67972149a0661a14"
+  },
+  "productImage": "uploads\\61Iz2yy2CKL.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a56e67972149a0661a2c"
+  },
+  "name": "The Theory of Everything",
+  "price": 138,
+  "category": {
+    "$oid": "5eb6948a67972149a0661a14"
+  },
+  "productImage": "uploads\\51oHUvYzbsL.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a57767972149a0661a2d"
+  },
+  "name": "The Power of your Subconscious Mind ",
+  "price": 142,
+  "category": {
+    "$oid": "5eb6948a67972149a0661a14"
+  },
+  "productImage": "uploads\\81gTwYAhU7L.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a59167972149a0661a2e"
+  },
+  "name": "Think and Grow Rich",
+  "price": 125,
+  "category": {
+    "$oid": "5eb6948a67972149a0661a14"
+  },
+  "productImage": "uploads\\713rQq1bF6L.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a5ad67972149a0661a2f"
+  },
+  "name": "The Girl in Room",
+  "price": 120,
+  "category": {
+    "$oid": "5eb6948a67972149a0661a14"
+  },
+  "productImage": "uploads\\51G3MfByofL.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a62567972149a0661a30"
+  },
+  "name": "NammaBaby Cotton Front Open Half Sleeves JHABLA Summer Vest-",
+  "price": 523,
+  "category": {
+    "$oid": "5eb6947667972149a0661a12"
+  },
+  "productImage": "uploads\\81tpjeT8XaL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a63a67972149a0661a31"
+  },
+  "name": "Minicult Cotton Baby Pajama Pants Unisex with Rib (Pack of 6)",
+  "price": 189,
+  "category": {
+    "$oid": "5eb6947667972149a0661a12"
+  },
+  "productImage": "uploads\\51K9uSZ330L.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a65167972149a0661a32"
+  },
+  "name": "NammaBaby Kid's Cotton Pajama Pant with Rib - Pack of 6",
+  "price": 852,
+  "category": {
+    "$oid": "5eb6947667972149a0661a12"
+  },
+  "productImage": "uploads\\81OopCeeZRL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a66967972149a0661a33"
+  },
+  "name": "Bumchums Baby Boy's Cotton Clothing Set",
+  "price": 960,
+  "category": {
+    "$oid": "5eb6947667972149a0661a12"
+  },
+  "productImage": "uploads\\91o-4SMsIRL._UL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a71a67972149a0661a34"
+  },
+  "name": " Samsung Galaxy M20 (Ocean Blue , 4GB RAM, 64GB Storage, 5000mAH Battery)",
+  "price": 18500,
+  "category": {
+    "$oid": "5eb6948067972149a0661a13"
+  },
+  "productImage": "uploads\\61nzw1i2taL._SL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a72a67972149a0661a35"
+  },
+  "name": "Vivo U20 (Blazing Blue, Snapdragon 675 AIE, 4GB RAM, 64GB Storage)",
+  "price": 78500,
+  "category": {
+    "$oid": "5eb6948067972149a0661a13"
+  },
+  "productImage": "uploads\\5146hJBeZqL._SL1200_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a73667972149a0661a36"
+  },
+  "name": "Realme (Blazing Blue, Snapdragon 675 AIE, 4GB RAM, 64GB Storage)",
+  "price": 18600,
+  "category": {
+    "$oid": "5eb6948067972149a0661a13"
+  },
+  "productImage": "uploads\\81dFFSBIpxL._SL1500_.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a77f67972149a0661a37"
+  },
+  "name": "Fresho Ginger, 500 g",
+  "price": 50,
+  "category": {
+    "$oid": "5eb6949c67972149a0661a15"
+  },
+  "productImage": "uploads\\10000119-2_3-fresho-ginger.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a7c967972149a0661a38"
+  },
+  "name": "Tomato - Hybrid, 1 kg",
+  "price": 19,
+  "category": {
+    "$oid": "5eb6949c67972149a0661a15"
+  },
+  "productImage": "uploads\\10000200-2_2-fresho-tomato-hybrid.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a7e067972149a0661a39"
+  },
+  "name": "Potato, 1 kg",
+  "price": 39,
+  "category": {
+    "$oid": "5eb6949c67972149a0661a15"
+  },
+  "productImage": "uploads\\10000159-2_7-fresho-potato.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a7f667972149a0661a3a"
+  },
+  "name": "Onion, 1 kg",
+  "price": 22,
+  "category": {
+    "$oid": "5eb6949c67972149a0661a15"
+  },
+  "productImage": "uploads\\10000148_28-fresho-onion.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5eb6a80c67972149a0661a3b"
+  },
+  "name": "Capsicum - Green, 500 g",
+  "price": 18,
+  "category": {
+    "$oid": "5eb6949c67972149a0661a15"
+  },
+  "productImage": "uploads\\10000069-2_28-fresho-capsicum-green.jpg",
+  "__v": 0
+}]
