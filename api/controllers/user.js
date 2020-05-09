@@ -60,6 +60,18 @@ exports.getProfile = (req, res, next) => {
             next(error);
         });
 };
+exports.getAll = (req, res, next) => {
+
+    User.find()
+        .select()
+        .exec()
+        .then(users => {
+            return res.json({ users })
+        })
+        .catch(error => {
+            next(error);
+        });
+};
 
 
 exports.logIn = (req, res, next) => {

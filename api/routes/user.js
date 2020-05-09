@@ -11,6 +11,7 @@ router.get('/is-admin', checkAuths.userAuth, UserController.isAdmin);
 
 router.delete('/:userId', checkAuths.adminAuth, UserController.deleteUser)
 
+router.get('', checkAuths.adminAuth, UserController.getAll)
 router.get('/me', checkAuths.userAuth, UserController.getProfile)
 
 module.exports = router;

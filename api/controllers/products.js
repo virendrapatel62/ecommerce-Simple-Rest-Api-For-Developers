@@ -3,12 +3,26 @@ const Product = require('../models/product');
 
 exports.getAllProducts = (req, res, next) => {
 
-    let q;
-    if (req.query.category)
-        q = Product.find({ category: req.query.category })
-    else
-        q = Product.find()
+    let filter = {
+        price: {
+            "$lte": 9999999999,
+            "$gte": 0
+        }
+    }
+    if (!isNaN(req.query.max)) {
+        filter.price["$lte"] = req.query.max
+    }
+    if (req.query.category) {
+        filter.category = req.query.category
+    }
+    if (!isNaN(req.query.min)) {
+        filter.price["$gte"] = req.query.min
+    }
 
+    console.log(req.query.min);
+    console.log(filter);
+
+    let q = Product.find(filter)
     q.populate('category')
         // .select('_id name price')
         .exec()
