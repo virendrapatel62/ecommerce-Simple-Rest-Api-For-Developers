@@ -7,6 +7,8 @@ const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
 const categoryRoutes = require('./api/routes/category');
+const { summary } = require('./api/controllers/orders');
+const { adminAuth } = require('./api/middleware/check-auth');
 require('dotenv').config()
 
 mongoose.connect(process.env.MONGO_URL_DEV);
@@ -47,6 +49,7 @@ app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 app.use('/users', userRoutes);
 app.use('/categories', categoryRoutes);
+app.use('/summary', adminAuth, summary);
 
 // Handle Error Requests
 app.use((req, res, next) => {

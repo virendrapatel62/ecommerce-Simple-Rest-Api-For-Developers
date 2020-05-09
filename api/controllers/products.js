@@ -62,7 +62,8 @@ exports.getOneProduct = (req, res, next) => {
     const id = req.params.productId;
     Product
         .findById(id)
-        .select('_id name price productImage')
+        .select('_id name price productImage category')
+        .populate('category')
         .exec()
         .then(product => {
             if (product) {
@@ -123,4 +124,15 @@ function createProduct(req) {
         category: req.body.category,
         productImage: req.file.path
     });
+}
+
+
+exports.productCount = () => {
+    return Product.aggregate(
+        [{
+            "$count": "productCount"
+        }]
+    ).then(r => {
+        return r[0].productCount
+    })
 }

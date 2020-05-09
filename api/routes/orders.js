@@ -5,7 +5,7 @@ const auth = require('../middleware/check-auth');
 const OrdersController = require('../controllers/orders');
 
 router.get('/', auth.userAuth, OrdersController.getAllOrders);
-router.post('/', auth.userAuth, OrdersController.createOneOrder);
+router.post('/', auth.userAuth, OrdersController.saveOrders);
 
 router.get('/:orderId', auth.userAuth, OrdersController.getOneOrder);
 

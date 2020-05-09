@@ -4,6 +4,13 @@ const jwt = require('jsonwebtoken');
 
 const User = require('../models/user');
 
+exports.isAdmin = (req, res, next) => {
+    if (req.userData.userType == 'admin')
+        return res.json(true)
+    else
+        return res.json(false)
+}
+
 exports.signUp = (req, res, next) => {
     User
         .find({ email: req.body.email })
@@ -122,4 +129,40 @@ function createUser(name, phone, email, hash) {
         phone: phone,
         password: hash
     });
+}
+
+
+//
+exports.getLast30DaysRegisteredUser = async function() {
+    let date = new Date();
+    date.setMonth(date.getMonth() - 1)
+    console.log(date.toDateString());
+    return User.aggregate(
+        [{
+                $match: {
+                    "created_at": {
+                        $gte: date,
+                    }
+                }
+            },
+            {
+                "$count": 'userCount'
+            }
+
+
+        ]
+    ).then(r => {
+        return r[0].userCount
+    })
+}
+
+exports.getTotalUserCount = async function() {
+
+    return User.aggregate(
+        [{
+            "$count": 'userCount'
+        }]
+    ).then(r => {
+        return r[0].userCount
+    })
 }
