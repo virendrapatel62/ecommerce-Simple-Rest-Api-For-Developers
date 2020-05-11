@@ -50,6 +50,9 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/summary', adminAuth, summary);
+app.use('/test', (req, res) => {
+    res.json({ message: "API IS WORKING..." })
+});
 
 // Handle Error Requests
 app.use((req, res, next) => {

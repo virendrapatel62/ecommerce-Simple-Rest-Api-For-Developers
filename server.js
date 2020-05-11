@@ -7,5 +7,6 @@ const port = process.env.PORT || 3000;
 const server = http.createServer(app);
 
 server.listen(port, () => {
-    console.log(`listing on : ${process.env.PORT}`);
+    console.log(`Server is listening on localhost: ${port} 
+    open your browser on http://localhost:${port}/`);
 });
