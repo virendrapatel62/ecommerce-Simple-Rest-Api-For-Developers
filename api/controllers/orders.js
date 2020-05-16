@@ -52,9 +52,39 @@ exports.saveOrders = (req, res, next) => {
     let lastName = req.body.lastName;
     let address = req.body.address;
 
+
+
     console.log(req.body.products);
 
-    let carts = JSON.parse(JSON.stringify(req.body.products));
+    let carts
+    try {
+        carts = JSON.parse(JSON.stringify(req.body.products));
+        if (!firstName.trim() || !lastName.trim() || !address.trim()) {
+            res.status(400)
+            res.json({
+                error: {
+                    message: 'firstName , lastName , address Required..'
+                }
+            })
+            return
+        }
+    } catch (error) {
+        res.status(400)
+        if (!carts) {
+            res.json({
+                error: {
+                    message: 'Products Required..'
+                }
+            })
+            return
+        }
+        res.json({
+            error: {
+                message: 'firstName , lastName , address Required..'
+            }
+        })
+        return
+    }
 
     let orders = [];
     for (let i = 0; i < carts.length; i++) {
