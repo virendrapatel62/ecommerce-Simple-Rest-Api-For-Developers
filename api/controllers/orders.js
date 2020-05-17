@@ -314,12 +314,12 @@ async function _summary() {
     return {
         last30DaysSummary: {
             userRegistered: await getLast30DaysRegisteredUser(),
-            sell: totalOrderAmountLast30Days,
-            orders: await getLast30DaysOrderCount()
+            sale: totalOrderAmountLast30Days,
+            orders: await getLast30DaysOrderCount(),
+            productWise30DaysSummary,
         },
         overAll: {
             products: pc,
-            productWise30DaysSummary,
             orders: await getTotalOrdersCount(),
             users: await getTotalUserCount(),
         }
