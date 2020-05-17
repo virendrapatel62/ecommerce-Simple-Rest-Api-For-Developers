@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const auths = {};
 
 auths.userAuth = (req, res, next) => {
+
     try {
         if (req.headers.authorization) {
             const token = req.headers.authorization.split(" ")[1];
@@ -48,10 +49,12 @@ module.exports = auths
 function handleError(error, next) {
     if (error) {
         error.message = 'Auth Failed!!!';
+        error.status = 401
         next(error);
     } else {
         const error = new Error();
         error.message = 'Auth Failed!!';
+        error.status = 401
         next(error);
     }
 }

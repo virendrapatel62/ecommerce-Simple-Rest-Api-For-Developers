@@ -54,6 +54,14 @@ app.use('/test', (req, res) => {
     res.json({ message: "API IS WORKING..." })
 });
 
+app.use('/api/uploads*', (req, res, next) => {
+    try {
+        res.sendFile(__dirname + '/uploads' + req.params[0])
+    } catch (error) {
+        next();
+    }
+})
+
 // Handle Error Requests
 app.use((req, res, next) => {
     const error = new Error();
@@ -67,7 +75,7 @@ app.use((error, req, res, next) => {
     console.log(error);
 
     res.status(error.status || 500).json({
-        error: error
+        error
     });
 });
 
