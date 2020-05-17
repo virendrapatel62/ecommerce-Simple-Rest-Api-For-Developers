@@ -10,7 +10,13 @@ exports.getAllOrders = (req, res, next) => {
             .find({ user: req.userData.userId })
             .select()
             .sort("-created_at")
-            .populate('product user')
+            .populate({
+                path: 'product',
+                populate: {
+                    path: 'category'
+                }
+            })
+            .populate('user')
             .exec()
             .then(orders => {
                 return res.status(200).json({
@@ -33,7 +39,13 @@ exports.getAllOrders = (req, res, next) => {
     }
 
     o.select()
-        .populate('product user')
+        .populate({
+            path: 'product',
+            populate: {
+                path: 'category'
+            }
+        })
+        .populate('user')
         .sort("-created_at")
         .exec()
         .then(orders => {
