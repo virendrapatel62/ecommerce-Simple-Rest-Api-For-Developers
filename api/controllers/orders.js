@@ -267,7 +267,7 @@ async function getLast30DaysProductWiseSelling() {
                     quantity: {
                         '$sum': '$quantity'
                     },
-                    totalSell: {
+                    totalSale: {
                         '$sum': {
                             '$multiply': ['$quantity', '$price']
                         }
