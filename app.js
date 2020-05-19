@@ -19,6 +19,7 @@ app.use(morgan('dev'));
 
 // Setup static files path
 app.use('/uploads', express.static('uploads'));
+app.use('/', express.static('public'));
 
 // Use body parser middleware to parse body of incoming requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -57,6 +58,14 @@ app.use('/test', (req, res) => {
 app.use('/api/uploads*', (req, res, next) => {
     try {
         res.sendFile(__dirname + '/uploads' + req.params[0])
+    } catch (error) {
+        next();
+    }
+})
+
+app.use('/*', (req, res, next) => {
+    try {
+        res.sendFile(__dirname + '/public/index.html')
     } catch (error) {
         next();
     }
