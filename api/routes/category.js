@@ -8,7 +8,7 @@ router.post("/", checkAuths.adminAuth, CategoryController.createOneCategory);
 router.delete(
   "/:id",
   checkAuths.adminAuth,
-  CategoryController.deleteOneCategory
+  CategoryController.deleteOneCategory,
 );
 router.get("/", CategoryController.getAllCategories);
 

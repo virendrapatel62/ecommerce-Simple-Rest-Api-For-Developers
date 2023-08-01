@@ -1,1 +1,302 @@
-{ "info": { "_postman_id": "3184ae62-c1e8-4f16-b64d-5b5db7a7d61b", "name": "ECOM-API", "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json" }, "item": [{ "name": "user signup ", "_postman_id": "7c90be1e-8eaf-48c7-8e20-b7379310b052", "request": { "method": "POST", "header": [], "body": { "mode": "raw", "raw": "{\n\t\"name\" : \"Virendra Patel\" , \n\t\"email\" : \"virendra@gmail.com\" , \n\t\"password\" : \"123456\" , \n\t\"phone\" : \"914446XXXXX\"\n}", "options": { "raw": { "language": "json" } } }, "url": "localhost\/api\/users\/signup" }, "response": [] }, { "name": "user login", "_postman_id": "a9798e2d-2288-4ca3-b013-e2487c9ec12e", "request": { "method": "POST", "header": [], "body": { "mode": "raw", "raw": "{ \n\t\"email\" : \"admin@gmail.com\" , \n\t\"password\" : \"123456\" \n}", "options": { "raw": { "language": "json" } } }, "url": "localhost\/api\/users\/login" }, "response": [] }, { "name": "create category ", "_postman_id": "5990ed08-3c37-4c88-bcdb-b2356898b816", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjYzZWEyYmNmZTkzMmJlODg0YmFkYyIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODkwMzY3ODksImV4cCI6MTU4OTA0MDM4OX0.NTfinUbZunEUyy2v4IenkqVqWsGEKnk_SEwegnMXOEk" } }, "method": "POST", "header": [], "body": { "mode": "raw", "raw": "{\n\t\"title\" : \"Cloths\"\n}", "options": { "raw": { "language": "json" } } }, "url": "localhost\/api\/categories" }, "response": [] }, { "name": "get All  category ", "_postman_id": "91d3e599-1f48-4021-8327-cd22ee3b991d", "protocolProfileBehavior": { "disableBodyPruning": true }, "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI" } }, "method": "GET", "header": [], "body": { "mode": "raw", "raw": "{\n\t\"title\" : \"Cloths\"\n}", "options": { "raw": { "language": "json" } } }, "url": "localhost\/api\/categories" }, "response": [] }, { "name": "delete  category ", "_postman_id": "26026a9e-0163-4456-bd68-27d42d45a72c", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI" } }, "method": "DELETE", "header": [], "url": "localhost\/api\/categories\/5eb4d428a486ee6f50d657e1" }, "response": [] }, { "name": "create product", "_postman_id": "b1b3b526-a307-4778-80d9-42197b8b6a16", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI" } }, "method": "POST", "header": [], "body": { "mode": "formdata", "formdata": [{ "key": "name", "value": "shirt", "type": "text" }, { "key": "price", "value": "450", "type": "text" }, { "key": "category ", "value": "5eb4d47239f0d85a0cfbda7a", "type": "text" }, { "key": "productImage", "type": "file", "src": "\/C:\/Users\/dell\/Pictures\/Capture.PNG" }], "options": { "raw": { "language": "json" } } }, "url": "localhost\/api\/products" }, "response": [] }, { "name": "get All Products ", "_postman_id": "519ed97a-d716-4c92-ab7c-a132275d7d55", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODkwMTUyMDcsImV4cCI6MTU4OTAxODgwN30.EEJoPXHp2jWAN5Ytzs_xTgpS_JIEzj2KNCPSTapMmQs" } }, "method": "GET", "header": [], "url": { "raw": "localhost\/api\/products?min=153&max=530", "host": ["localhost"], "path": ["api", "products"], "query": [{ "key": "min", "value": "153" }, { "key": "max", "value": "530" }] }, "description": "optional query params \ncategory=categoryid" }, "response": [] }, { "name": "get All Products  by Category", "_postman_id": "35459e11-feb7-40aa-a0db-3a5668ed56b6", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI" } }, "method": "GET", "header": [], "url": { "raw": "localhost\/api\/products?category=5eb4d47239f0d85a0cfbda7a", "host": ["localhost"], "path": ["api", "products"], "query": [{ "key": "category", "value": "5eb4d47239f0d85a0cfbda7a" }] } }, "response": [] }, { "name": "create order", "_postman_id": "ff0369f3-4e89-4e9b-aa69-dcf21459ab2d", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYmI3YTBjYTBiYTM4NWRhNGJjZjMyOSIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4OTU5MzkwNCwiZXhwIjoxNTg5NTk3NTA0fQ.X5paixKaPt3dazZOkIcwT9TuSuNqr2i6sSD0-infxrQ" } }, "method": "POST", "header": [], "body": { "mode": "raw", "raw": "\n{\n\t\"firstName\" : \"virendra\", \n\t\"lastName\" : \"patel\" , \n\t\"address\" : \"jabalpur\", \n\t\"products\" : [\n\t\t{\n\t\t\t\"productId\" : \"5eb4d62d39f0d85a0cfbda7d\" , \n\t\t\t\"quantity\" : 2, \n\t\t\t\"price\" : 350\n\t\t},\n\t\t{\n\t\t\t\"productId\" : \"5eb4d62d39f0d85a0cfbda7d\" , \n\t\t\t\"quantity\" : 5, \n\t\t\t\"price\" : 360\n\t\t\t\n\t\t}\n\t]\n\t\n}", "options": { "raw": { "language": "json" } } }, "url": "localhost\/api\/orders" }, "response": [] }, { "name": "get All orders", "_postman_id": "5499e3d5-9d1f-41a7-9459-4c2f62a8ee00", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4ODkxMDAzMSwiZXhwIjoxNTg4OTEzNjMxfQ.Ej9A2LXOYRbV58LhasaNiicPfeSFxPKDmXaH_vC4wQI" } }, "method": "GET", "header": [], "url": "localhost\/api\/orders" }, "response": [] }, { "name": "update order status", "_postman_id": "69f26d03-5194-4844-84c1-aec443c2c6a4", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MTAyNzUsImV4cCI6MTU4ODkxMzg3NX0.IGCYUtk2zPAptchz5FzM816PojmFv23G0tunPIwL2-k" } }, "method": "PATCH", "header": [], "body": { "mode": "raw", "raw": "{\n\t\"status\" : \"completed\"\n}", "options": { "raw": { "language": "json" } } }, "url": "localhost\/api\/orders\/5eb4d7900696c875b49d521f" }, "response": [] }, { "name": "get product by id ", "_postman_id": "d2ddbea4-2efe-4c60-818b-90fd93a6287c", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5Mjk5MzIsImV4cCI6MTU4ODkzMzUzMn0.wYqLPMyi_5KMUYmh0v84k34p_10bpji_pzjiyTaG8Ro" } }, "method": "GET", "header": [], "url": "localhost\/api\/products\/5eb4d62d39f0d85a0cfbda7d" }, "response": [] }, { "name": "cheak current llogged in user is admin on not ", "_postman_id": "4caa7588-4071-4061-8446-4959c8228779", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5Mjk5MzIsImV4cCI6MTU4ODkzMzUzMn0.wYqLPMyi_5KMUYmh0v84k34p_10bpji_pzjiyTaG8Ro" } }, "method": "GET", "header": [], "url": "localhost\/api\/users\/is-admin" }, "response": [] }, { "name": "admin summary", "_postman_id": "c49af995-18a6-47fe-a28d-7b7a433e85a0", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODkwMDExODAsImV4cCI6MTU4OTAwNDc4MH0.2TBlU86dBIRedc93JRwx6ALbzeG-POf74m24RJ8aors" } }, "method": "GET", "header": [], "url": "localhost\/api\/summary" }, "response": [] }, { "name": "get All orders?all=true", "_postman_id": "6bf7bccf-94fc-4e6b-854d-2939833649a0", "request": { "auth": { "type": "bearer", "bearer": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4ODkxMDAzMSwiZXhwIjoxNTg4OTEzNjMxfQ.Ej9A2LXOYRbV58LhasaNiicPfeSFxPKDmXaH_vC4wQI" } }, "method": "GET", "header": [], "url": "localhost\/api\/orders", "description": "For Admin " }, "response": [] }], "protocolProfileBehavior": {} }
+{
+  "info": {
+    "_postman_id": "3184ae62-c1e8-4f16-b64d-5b5db7a7d61b",
+    "name": "ECOM-API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "user signup ",
+      "_postman_id": "7c90be1e-8eaf-48c7-8e20-b7379310b052",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\" : \"Virendra Patel\" , \n\t\"email\" : \"virendra@gmail.com\" , \n\t\"password\" : \"123456\" , \n\t\"phone\" : \"914446XXXXX\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost/api/users/signup"
+      },
+      "response": []
+    },
+    {
+      "name": "user login",
+      "_postman_id": "a9798e2d-2288-4ca3-b013-e2487c9ec12e",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \n\t\"email\" : \"admin@gmail.com\" , \n\t\"password\" : \"123456\" \n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost/api/users/login"
+      },
+      "response": []
+    },
+    {
+      "name": "create category ",
+      "_postman_id": "5990ed08-3c37-4c88-bcdb-b2356898b816",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjYzZWEyYmNmZTkzMmJlODg0YmFkYyIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODkwMzY3ODksImV4cCI6MTU4OTA0MDM4OX0.NTfinUbZunEUyy2v4IenkqVqWsGEKnk_SEwegnMXOEk"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"title\" : \"Cloths\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost/api/categories"
+      },
+      "response": []
+    },
+    {
+      "name": "get All  category ",
+      "_postman_id": "91d3e599-1f48-4021-8327-cd22ee3b991d",
+      "protocolProfileBehavior": { "disableBodyPruning": true },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"title\" : \"Cloths\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost/api/categories"
+      },
+      "response": []
+    },
+    {
+      "name": "delete  category ",
+      "_postman_id": "26026a9e-0163-4456-bd68-27d42d45a72c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI"
+          }
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": "localhost/api/categories/5eb4d428a486ee6f50d657e1"
+      },
+      "response": []
+    },
+    {
+      "name": "create product",
+      "_postman_id": "b1b3b526-a307-4778-80d9-42197b8b6a16",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "name", "value": "shirt", "type": "text" },
+            { "key": "price", "value": "450", "type": "text" },
+            {
+              "key": "category ",
+              "value": "5eb4d47239f0d85a0cfbda7a",
+              "type": "text"
+            },
+            {
+              "key": "productImage",
+              "type": "file",
+              "src": "/C:/Users/dell/Pictures/Capture.PNG"
+            }
+          ],
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost/api/products"
+      },
+      "response": []
+    },
+    {
+      "name": "get All Products ",
+      "_postman_id": "519ed97a-d716-4c92-ab7c-a132275d7d55",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODkwMTUyMDcsImV4cCI6MTU4OTAxODgwN30.EEJoPXHp2jWAN5Ytzs_xTgpS_JIEzj2KNCPSTapMmQs"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost/api/products?min=153&max=530",
+          "host": ["localhost"],
+          "path": ["api", "products"],
+          "query": [
+            { "key": "min", "value": "153" },
+            { "key": "max", "value": "530" }
+          ]
+        },
+        "description": "optional query params \ncategory=categoryid"
+      },
+      "response": []
+    },
+    {
+      "name": "get All Products  by Category",
+      "_postman_id": "35459e11-feb7-40aa-a0db-3a5668ed56b6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MDkwNDIsImV4cCI6MTU4ODkxMjY0Mn0.Us4kERI93HDHLMd_d4JIBFDChyuJCro_Bcgbfk7fcrI"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost/api/products?category=5eb4d47239f0d85a0cfbda7a",
+          "host": ["localhost"],
+          "path": ["api", "products"],
+          "query": [{ "key": "category", "value": "5eb4d47239f0d85a0cfbda7a" }]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create order",
+      "_postman_id": "ff0369f3-4e89-4e9b-aa69-dcf21459ab2d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYmI3YTBjYTBiYTM4NWRhNGJjZjMyOSIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4OTU5MzkwNCwiZXhwIjoxNTg5NTk3NTA0fQ.X5paixKaPt3dazZOkIcwT9TuSuNqr2i6sSD0-infxrQ"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\n{\n\t\"firstName\" : \"virendra\", \n\t\"lastName\" : \"patel\" , \n\t\"address\" : \"jabalpur\", \n\t\"products\" : [\n\t\t{\n\t\t\t\"productId\" : \"5eb4d62d39f0d85a0cfbda7d\" , \n\t\t\t\"quantity\" : 2, \n\t\t\t\"price\" : 350\n\t\t},\n\t\t{\n\t\t\t\"productId\" : \"5eb4d62d39f0d85a0cfbda7d\" , \n\t\t\t\"quantity\" : 5, \n\t\t\t\"price\" : 360\n\t\t\t\n\t\t}\n\t]\n\t\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost/api/orders"
+      },
+      "response": []
+    },
+    {
+      "name": "get All orders",
+      "_postman_id": "5499e3d5-9d1f-41a7-9459-4c2f62a8ee00",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4ODkxMDAzMSwiZXhwIjoxNTg4OTEzNjMxfQ.Ej9A2LXOYRbV58LhasaNiicPfeSFxPKDmXaH_vC4wQI"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "localhost/api/orders"
+      },
+      "response": []
+    },
+    {
+      "name": "update order status",
+      "_postman_id": "69f26d03-5194-4844-84c1-aec443c2c6a4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5MTAyNzUsImV4cCI6MTU4ODkxMzg3NX0.IGCYUtk2zPAptchz5FzM816PojmFv23G0tunPIwL2-k"
+          }
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"status\" : \"completed\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "localhost/api/orders/5eb4d7900696c875b49d521f"
+      },
+      "response": []
+    },
+    {
+      "name": "get product by id ",
+      "_postman_id": "d2ddbea4-2efe-4c60-818b-90fd93a6287c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5Mjk5MzIsImV4cCI6MTU4ODkzMzUzMn0.wYqLPMyi_5KMUYmh0v84k34p_10bpji_pzjiyTaG8Ro"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "localhost/api/products/5eb4d62d39f0d85a0cfbda7d"
+      },
+      "response": []
+    },
+    {
+      "name": "cheak current llogged in user is admin on not ",
+      "_postman_id": "4caa7588-4071-4061-8446-4959c8228779",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODg5Mjk5MzIsImV4cCI6MTU4ODkzMzUzMn0.wYqLPMyi_5KMUYmh0v84k34p_10bpji_pzjiyTaG8Ro"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "localhost/api/users/is-admin"
+      },
+      "response": []
+    },
+    {
+      "name": "admin summary",
+      "_postman_id": "c49af995-18a6-47fe-a28d-7b7a433e85a0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkM2U5YjQxYmZkNzc4MGU1MjZkNCIsInVzZXJUeXBlIjoiYWRtaW4iLCJpYXQiOjE1ODkwMDExODAsImV4cCI6MTU4OTAwNDc4MH0.2TBlU86dBIRedc93JRwx6ALbzeG-POf74m24RJ8aors"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "localhost/api/summary"
+      },
+      "response": []
+    },
+    {
+      "name": "get All orders?all=true",
+      "_postman_id": "6bf7bccf-94fc-4e6b-854d-2939833649a0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpcmVuZHJhQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVlYjRkMzgzYTQ4NmVlNmY1MGQ2NTdkZiIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4ODkxMDAzMSwiZXhwIjoxNTg4OTEzNjMxfQ.Ej9A2LXOYRbV58LhasaNiicPfeSFxPKDmXaH_vC4wQI"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "localhost/api/orders",
+        "description": "For Admin "
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
