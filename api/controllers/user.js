@@ -25,7 +25,7 @@ exports.signUp = (req, res, next) => {
         req.body.name,
         req.body.phone,
         req.body.email,
-        hash,
+        hash
       );
       return user.save();
     })
@@ -100,7 +100,7 @@ exports.logIn = (req, res, next) => {
           process.env.JWT_KEY,
           {
             expiresIn: "1h",
-          },
+          }
         );
         return res.status(200).json({
           message: "Auth Successful!",
